@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".yoga.DetailVideoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlDetail"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/white"
+            android:layout_height="400dp"
+            android:background="@drawable/down_curve"
+            android:clipChildren="true"
+            android:clipToOutline="true"
+            android:orientation="vertical">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/videourl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:autoPlay="false" />
+
+            <ImageView
+                android:id="@+id/fullScreen"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/baseline_fullscreen_24"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llUpNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Begenners Yoga Poses"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtUpNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Up Next"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvUpNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/llViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayoutDiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:tabIndicatorColor="@color/colorSecondary"
+                app:tabTextColor="@color/colorSecondary" />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerDiet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tablayoutDiet"
+                android:background="@color/white"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

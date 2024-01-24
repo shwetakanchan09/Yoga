@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Yoga</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id" translatable="false">271913007346-5649jkgh48q5p22ku60mb7fu3782llcr.apps.googleusercontent.com</string>
+
+    <string name="facebook_app_id">1234</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+</resources>

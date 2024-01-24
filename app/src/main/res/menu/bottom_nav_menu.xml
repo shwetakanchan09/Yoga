@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/yoga"
+        android:title="Yoga"
+        android:iconTint="@color/white"
+        android:icon="@drawable/yoga"/>
+    <item
+        android:id="@+id/meditation"
+        android:title="Meditation"
+        android:iconTint="@color/white"
+        android:icon="@drawable/meditation"/>
+    <item
+        android:id="@+id/diet"
+        android:title="Diet"
+        android:iconTint="@color/white"
+        android:icon="@drawable/diet"/>
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:iconTint="@color/white"
+        android:icon="@drawable/profile"/>
+</menu>
